@@ -4,3 +4,6 @@
 <template>
   <h1>FollowingPage</h1>
 </template>
+
+<style scoped>
+</style>
