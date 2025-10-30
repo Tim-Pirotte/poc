@@ -1,9 +1,29 @@
 <script setup>
+import { ref, onMounted } from 'vue';
+
+import AdriaShieldLogo from '../components/icons/AdriaShieldLogo.vue';
+import Plan from '../components/Plan.vue';
+import plansData from '../mock-data/plans.json';
+
+const plans = ref([]);
+
+onMounted(() => {
+  plans.value = plansData;
+});
 </script>
 
 <template>
-  <h1>PlanPage</h1>
-  <router-link to="/confirm-plan">Select</router-link>
+  <header>
+    <AdriaShieldLogo/>
+    <h1>Select a plan</h1>
+  </header>
+  <main>
+    <Plan
+      v-for="plan in plans"
+      :key="plan.id"
+      :plan="plan"
+    />
+  </main>
 </template>
 
 <style scoped>
