@@ -1,11 +1,19 @@
 <script setup>
+import { useRoute } from 'vue-router';
+
+import PlanSummary from '../components/PlanSummary.vue';
+import plans from '../mock-data/plans.json';
+
+const route = useRoute();
+const selectedId = Number(route.query.id);
+const plan = plans.find(p => p.id === selectedId);
 </script>
 
 <template>
-  <h1>ConfirmPlanPage</h1>
+  <PlanSummary :plan="plan"/>
   <router-link to="/plans">Back</router-link>
-  <router-link to="/thank-you">Buy</router-link>
-  <router-link to="/map">Home</router-link>
+  <router-link v-if="plan.price" to="/thank-you">Buy</router-link>
+  <router-link v-if="!plan.price" to="/map">Home</router-link>
 </template>
 
 <style scoped>

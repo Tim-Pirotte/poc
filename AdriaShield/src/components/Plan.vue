@@ -13,7 +13,7 @@ defineProps({
 <PlanContent :nodes="plan.content" />
 
 <h3><span v-if="plan.oldPrice">₳ {{ plan.oldPrice }}</span> ₳ {{ plan.price? plan.price : "Free" }}</h3>
-<router-link to="/confirm-plan">Select</router-link>
+<router-link :to="`/confirm-plan?id=${plan.id}`">Select</router-link>
 </template>
 
 <style scoped>
