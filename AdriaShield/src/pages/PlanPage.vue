@@ -1,15 +1,7 @@
 <script setup>
-import { ref, onMounted } from 'vue';
-
 import AdriaShieldLogo from '../components/icons/AdriaShieldLogo.vue';
 import Plan from '../components/Plan.vue';
-import plansData from '../mock-data/plans.json';
-
-const plans = ref([]);
-
-onMounted(() => {
-  plans.value = plansData;
-});
+import plans from '../mock-data/plans.json';
 </script>
 
 <template>
