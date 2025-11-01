@@ -7,6 +7,7 @@ import FamilyPage from './pages/FamilyPage.vue';
 import FollowingPage from './pages/FollowingPage.vue';
 import MapPage from './pages/MapPage.vue';
 import NotificationsPage from './pages/NotificationsPage.vue';
+import PaymentFailedPage from './pages/PaymentFailedPage.vue';
 import PlanPage from './pages/PlanPage.vue';
 import SettingsPage from './pages/SettingsPage.vue';
 import ShelterInfoPage from './pages/ShelterInfoPage.vue';
@@ -21,6 +22,7 @@ const routes = [
   { path: '/following', component: FollowingPage },
   { path: '/map', component: MapPage },
   { path: '/notification-settings', component: NotificationsPage },
+  { path: '/payment-failed', component: PaymentFailedPage },
   { path: '/plans', component: PlanPage },
   { path: '/settings', component: SettingsPage },
   { path: '/shelter-info', component: ShelterInfoPage },
