@@ -43,7 +43,7 @@ async function loadPageLocale(pageName) {
     locale.currentPage = pageName;
 
     locale.pageContent = await loadLocale(locale.language, locale.currentPage);
-    locale.fallbackContent = await loadLocale(fallBackLocale, loadLocale.currentPage);
+    locale.fallbackContent = await loadLocale(fallBackLocale, locale.currentPage);
 
     locale.loading = false;
 }
