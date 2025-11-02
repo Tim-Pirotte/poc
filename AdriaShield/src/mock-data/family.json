@@ -1,0 +1,23 @@
+{
+    "maxMembers": 5,
+    "name": "Ronald's family",
+    "owner": 0,
+    "members": [
+        {
+            "id": 0,
+            "name": "Joske Vermeulen",
+            "profilePictureSources": [
+                { "src": "ade7fb59-c10f-4183-ab6d-b7da36691d6a.png", "type": "image/png" },
+                { "src": "d25ef446-f0ea-41ef-b3d0-b81333f1e732.webp", "type": "image/webp" }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Charles Davis",
+            "profilePictureSources": [
+                { "src": "8cea1237-7c5f-47a8-aa47-5117bde92584.png", "type": "image/png" },
+                { "src": "8d6d69be-4c32-41a2-bc64-13dd51b78604.webp", "type": "image/webp" }
+            ]
+        }
+    ]
+}
