@@ -1,0 +1,9 @@
+{
+    "id": 0,
+    "sources": [
+        { "src": "src/mock-data/advertisements/mock_advert.webp", "type": "image/webp" },
+        { "src": "src/mock-data/advertisements/mock_advert_fallback.png", "type": "image/png" }
+    ],
+    "alt": "Skynet, the fastest and safest way to shelter",
+    "url": "https://example.com"
+}

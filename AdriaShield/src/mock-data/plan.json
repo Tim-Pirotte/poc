@@ -1,0 +1,11 @@
+{
+    "id": 2,
+    "name": "Basic",
+    "showAds": true,
+    "routePlanning": false,
+    "maxFamilyMembers": 0,
+    "maxFollowing": 0,
+    "emergenyAlerts": true,
+    "generalAlerts": false,
+    "weatherInfo": true
+}
