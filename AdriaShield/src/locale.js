@@ -6,13 +6,15 @@ const locale = reactive({
   language: fallBackLocale,
   pageContent: {},
   fallbackContent: {},
+  commonContent: {},
+  fallbackCommonContent: {},
   currentPage: null,
   loading: false,
 });
 
-async function loadLocale(language) {
+async function loadLocale(language, page) {
     try {
-        return await import(`./locales/${language}/${locale.currentPage}.json`);
+        return await import(`./locales/${language}/${page}.json`);
     } catch (error) {
         console.error(`Error loading a locale: ${error.message}`);
 
@@ -26,6 +28,13 @@ function setLanguage(language) {
     if (locale.currentPage) {
         loadPageLocale(locale.currentPage);
     }
+
+    loadCommonLocale();
+}
+
+async function loadCommonLocale() {
+    locale.commonContent = await loadLocale(locale.language, "common");
+    locale.fallbackCommonContent = await loadLocale(fallBackLocale, "common");
 }
 
 async function loadPageLocale(pageName) {
@@ -33,14 +42,18 @@ async function loadPageLocale(pageName) {
 
     locale.currentPage = pageName;
 
-    locale.pageContent = await loadLocale(locale.language);
-    locale.fallbackContent = await loadLocale(fallBackLocale);
+    locale.pageContent = await loadLocale(locale.language, locale.currentPage);
+    locale.fallbackContent = await loadLocale(fallBackLocale, loadLocale.currentPage);
 
     locale.loading = false;
 }
 
 function l(key) {
-    return locale.pageContent?.[key] ?? locale.fallbackContent?.[key] ?? key;
+    return locale.pageContent?.[key] 
+        ?? locale.commonContent?.[key]
+        ?? locale.fallbackContent?.[key] 
+        ?? locale.fallbackCommonContent?.[key]
+        ?? key;
 }
 
-export { locale, l, setLanguage, loadPageLocale };
+export { locale, l, setLanguage, loadPageLocale, loadCommonLocale };

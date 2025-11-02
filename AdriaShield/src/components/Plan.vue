@@ -1,4 +1,7 @@
 <script setup>
+import { inject } from 'vue';
+const l = inject('l');
+
 import PlanContent from './PlanContent.vue';
 
 defineProps({
@@ -13,7 +16,7 @@ defineProps({
 <PlanContent :nodes="plan.content" />
 
 <h3><span v-if="plan.oldPrice">₳ {{ plan.oldPrice }}</span> ₳ {{ plan.price? plan.price : "Free" }}</h3>
-<router-link :to="`/confirm-plan?id=${plan.id}`">Select</router-link>
+<router-link :to="`/confirm-plan?id=${plan.id}`">{{ l('select') }}</router-link>
 </template>
 
 <style scoped>
