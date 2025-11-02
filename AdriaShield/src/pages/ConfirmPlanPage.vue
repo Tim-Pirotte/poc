@@ -1,4 +1,7 @@
 <script setup>
+import { inject } from 'vue';
+const l = inject('l');
+
 import { useRoute } from 'vue-router';
 
 import AdriaShieldLogo from '../components/icons/AdriaShieldLogo.vue';
@@ -13,13 +16,13 @@ const plan = plans.find(p => p.id === selectedId);
 <template>
   <header>
     <AdriaShieldLogo/>
-    <h1>Confirm your plan</h1>
+    <h1>{{ l('title') }}</h1>
   </header>
   <main>
     <PlanSummary :plan="plan"/>
-    <router-link to="/plans">Back</router-link>
-    <router-link v-if="plan.price" to="/thank-you">Buy</router-link>
-    <router-link v-else to="/map">Home</router-link>
+    <router-link to="/plans">{{ l('back') }}</router-link>
+    <router-link v-if="plan.price" to="/thank-you">{{ l('buy') }}</router-link>
+    <router-link v-else to="/map">{{ l('home') }}</router-link>
   </main>
 </template>
 

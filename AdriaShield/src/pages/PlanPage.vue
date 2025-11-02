@@ -1,4 +1,7 @@
 <script setup>
+import { inject } from 'vue';
+const l = inject('l');
+
 import AdriaShieldLogo from '../components/icons/AdriaShieldLogo.vue';
 import Plan from '../components/Plan.vue';
 import plans from '../mock-data/plans.json';
@@ -7,7 +10,7 @@ import plans from '../mock-data/plans.json';
 <template>
   <header>
     <AdriaShieldLogo/>
-    <h1>Select a plan</h1>
+    <h1>{{ l('title') }}</h1>
   </header>
   <main>
     <Plan

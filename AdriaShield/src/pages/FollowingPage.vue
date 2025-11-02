@@ -1,4 +1,6 @@
 <script setup>
+import { inject } from 'vue';
+const l = inject('l');
 </script>
 
 <template>

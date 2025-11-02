@@ -14,19 +14,18 @@ import ShelterInfoPage from './pages/ShelterInfoPage.vue';
 import ThankYouPage from './pages/ThankYouPage.vue';
 
 const routes = [
-  { path: '/', component: AuthPage },
-
-  { path: '/area-info', component: AreaInfoPage },
-  { path: '/confirm-plan', component: ConfirmPlanPage },
-  { path: '/family', component: FamilyPage },
-  { path: '/following', component: FollowingPage },
-  { path: '/map', component: MapPage },
-  { path: '/notification-settings', component: NotificationsPage },
-  { path: '/payment-failed', component: PaymentFailedPage },
-  { path: '/plans', component: PlanPage },
-  { path: '/settings', component: SettingsPage },
-  { path: '/shelter-info', component: ShelterInfoPage },
-  { path: '/thank-you', component: ThankYouPage },
+  { path: '/', component: AuthPage, name: 'AuthPage' },
+  { path: '/area-info', component: AreaInfoPage, name: 'AreaInfoPage' },
+  { path: '/confirm-plan', component: ConfirmPlanPage, name: 'ConfirmPlanPage' },
+  { path: '/family', component: FamilyPage, name: 'FamilyPage' },
+  { path: '/following', component: FollowingPage, name: 'FollowingPage' },
+  { path: '/map', component: MapPage, name: 'MapPage' },
+  { path: '/notification-settings', component: NotificationsPage, name: 'NotificationsPage' },
+  { path: '/payment-failed', component: PaymentFailedPage, name: 'PaymentFailedPage' },
+  { path: '/plans', component: PlanPage, name: 'PlanPage' },
+  { path: '/settings', component: SettingsPage, name: 'SettingsPage' },
+  { path: '/shelter-info', component: ShelterInfoPage, name: 'ShelterInfoPage' },
+  { path: '/thank-you', component: ThankYouPage, name: 'ThankYouPage' },
 ];
 
 const router = createRouter({

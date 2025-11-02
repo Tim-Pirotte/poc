@@ -1,16 +1,19 @@
 <script setup>
+import { inject } from 'vue';
+const l = inject('l');
+
 import AdriaShieldLogo from '@/components/icons/AdriaShieldLogo.vue';
 </script>
 
 <template>
   <header>
     <AdriaShieldLogo/>
-    <h1>Thank you for your support!</h1>
+    <h1>{{ l('title') }}</h1>
   </header>
   <main>
-    <h2>You are contributing to a safer Adria</h2>
+    <h2>{{ l('subtitle') }}</h2>
   </main>
-  <router-link to="/map">Home</router-link>
+  <router-link to="/map">{{ l('home') }}</router-link>
 </template>
 
 <style scoped>
