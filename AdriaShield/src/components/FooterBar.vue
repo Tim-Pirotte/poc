@@ -5,9 +5,15 @@ import Following from "./icons/Following.vue";
 </script>
 
 <template>
-    <Family/>
-    <StreetMap/>
-    <Following/>
+    <router-link to="/family">
+        <Family/>
+    </router-link>
+    <router-link to="/map">
+        <StreetMap/>
+    </router-link>
+    <router-link to="/following">
+        <Following/>
+    </router-link>
 </template>
 
 <style scoped>

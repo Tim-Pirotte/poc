@@ -2,10 +2,13 @@
 import { inject } from 'vue';
 const l = inject('l');
 
+import HeaderBar from '@/components/HeaderBar.vue';
+import FooterBar from '@/components/FooterBar.vue';
 </script>
 
 <template>
-  <h1>NotificationsPage</h1>
+  <HeaderBar/>
+  <FooterBar/>
 </template>
 
 <style scoped>

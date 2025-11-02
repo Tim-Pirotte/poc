@@ -5,9 +5,13 @@ import Account from "./icons/Account.vue";
 </script>
 
 <template>
-    <Bell/>
+    <router-link to="/notification-settings">
+        <Bell/>
+    </router-link>
     <AdriaShieldLogo/>
-    <Account/>
+    <router-link to="/settings">
+        <Account/>
+    </router-link>
 </template>
 
 <style scoped>

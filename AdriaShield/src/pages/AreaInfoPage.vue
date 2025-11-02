@@ -1,10 +1,14 @@
 <script setup>
 import { inject } from 'vue';
 const l = inject('l');
+
+import HeaderBar from '@/components/HeaderBar.vue';
+import FooterBar from '@/components/FooterBar.vue';
 </script>
 
 <template>
-  <h1>AreaInfoPage</h1>
+  <HeaderBar/>
+  <FooterBar/>
 </template>
 
 <style scoped>
