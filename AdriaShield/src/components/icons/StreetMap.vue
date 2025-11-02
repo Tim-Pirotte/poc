@@ -8,7 +8,5 @@ import streetMapSvg from '@/assets/images/street-map/streetMap.svg';
 </script>
 
 <template>
-    <ProgressiveImage :alt="l('map')" :sources="[
-        { src: streetMapSvg, type: 'image/svg' },
-    ]"/>
+  <ProgressiveImage :alt="l('map')" :sources="[{ src: streetMapSvg, type: 'image/svg' }]" />
 </template>

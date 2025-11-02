@@ -9,17 +9,12 @@ import plans from '../mock-data/plans.json';
 
 <template>
   <header>
-    <AdriaShieldLogo/>
+    <AdriaShieldLogo />
     <h1>{{ l('title') }}</h1>
   </header>
   <main>
-    <Plan
-      v-for="plan in plans"
-      :key="plan.id"
-      :plan="plan"
-    />
+    <Plan v-for="plan in plans" :key="plan.id" :plan="plan" />
   </main>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

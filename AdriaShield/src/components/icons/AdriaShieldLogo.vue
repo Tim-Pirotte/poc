@@ -9,8 +9,11 @@ import logoPng from '@/assets/images/logo/logo_fallback.png';
 </script>
 
 <template>
-    <ProgressiveImage :alt="l('logo')" :sources="[
-        { src: logoWebP, type: 'image/webp' },
-        { src: logoPng, type: 'image/png' }
-    ]"/>
+  <ProgressiveImage
+    :alt="l('logo')"
+    :sources="[
+      { src: logoWebP, type: 'image/webp' },
+      { src: logoPng, type: 'image/png' },
+    ]"
+  />
 </template>

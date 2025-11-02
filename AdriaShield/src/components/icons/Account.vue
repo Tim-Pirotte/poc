@@ -8,7 +8,5 @@ import accountSvg from '@/assets/images/account/account.svg';
 </script>
 
 <template>
-    <ProgressiveImage :alt="l('account')" :sources="[
-        { src: accountSvg, type: 'image/svg' },
-    ]"/>
+  <ProgressiveImage :alt="l('account')" :sources="[{ src: accountSvg, type: 'image/svg' }]" />
 </template>

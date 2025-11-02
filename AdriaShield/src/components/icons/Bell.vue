@@ -8,7 +8,5 @@ import bellSvg from '@/assets/images/notifications/notifications.svg';
 </script>
 
 <template>
-    <ProgressiveImage :alt="l('notifications')" :sources="[
-        { src: bellSvg, type: 'image/svg' },
-    ]"/>
+  <ProgressiveImage :alt="l('notifications')" :sources="[{ src: bellSvg, type: 'image/svg' }]" />
 </template>

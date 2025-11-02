@@ -10,14 +10,13 @@ import './assets/styles/reset.css';
 loadCommonLocale();
 
 router.beforeEach(async (to, _, next) => {
-    if (to.name) {
-        loadPageLocale(to.name);
-    }
+  if (to.name) {
+    loadPageLocale(to.name);
+  }
 
-    next();
+  next();
 });
 
 const app = createApp(App);
 
-app.use(router)
-   .mount('#app');
+app.use(router).mount('#app');

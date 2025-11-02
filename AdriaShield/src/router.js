@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
 
 import AreaInfoPage from './pages/AreaInfoPage.vue';
 import AuthPage from './pages/AuthPage.vue';

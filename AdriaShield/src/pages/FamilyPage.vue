@@ -12,23 +12,26 @@ import plan from '../mock-data/plan.json';
 
 <template>
   <header>
-    <HeaderBar/>
+    <HeaderBar />
     <h1>{{ l('family') }}</h1>
     <h2 v-if="family">{{ family.members.length }}/{{ family.maxMembers }}</h2>
   </header>
   <main v-if="!family">
     <h3>{{ l('noFamilyPlan') }}</h3>
-    <router-link to="/plans">{{ l('changePlan') }}</router-link>
+    <router-link to="/plans">
+      {{ l('changePlan') }}
+    </router-link>
   </main>
   <main v-else>
     <form v-if="user.id === family.owner">
       <label for="user-to-invite">{{ l('name') }}</label>
-      <input type="text" id="user-to-invite" :placeholder="l('invitePlaceholder')">
-      <button type="submit">{{ l('invite') }}</button>
+      <input id="user-to-invite" type="text" :placeholder="l('invitePlaceholder')" />
+      <button type="submit">
+        {{ l('invite') }}
+      </button>
     </form>
   </main>
-  <FooterBar/>
+  <FooterBar />
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

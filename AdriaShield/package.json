@@ -9,15 +9,30 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "npx eslint src",
+    "lint:fix": "npx eslint --fix src",
+    "format": "prettier --write \"src/**/*.{js,vue,json,css,scss,md}\"",
+    "test": "npx vitest"
   },
   "dependencies": {
     "vue": "^3.5.22",
     "vue-router": "^4.6.3"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "@testing-library/vue": "^8.1.0",
     "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/test-utils": "^2.4.6",
+    "eslint": "^9.39.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-vue": "^10.5.1",
+    "globals": "^16.5.0",
+    "jsdom": "^27.1.0",
+    "prettier": "^3.6.2",
     "vite": "^7.1.11",
-    "vite-plugin-vue-devtools": "^8.0.3"
+    "vite-plugin-vue-devtools": "^8.0.3",
+    "vitest": "^4.0.6"
   }
 }

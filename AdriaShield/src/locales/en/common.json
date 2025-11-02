@@ -1,11 +1,11 @@
 {
-    "account": "Account",
-    "logo": "Logo",
-    "notifications": "Notifications",
-    "family": "My family",
-    "following": "Following",
-    "map": "Map",
+  "account": "Account",
+  "logo": "Logo",
+  "notifications": "Notifications",
+  "family": "My family",
+  "following": "Following",
+  "map": "Map",
 
-    "ariaAd": "Advertisement",
-    "removeAds": "Remove"
+  "ariaAd": "Advertisement",
+  "removeAds": "Remove"
 }

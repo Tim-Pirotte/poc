@@ -8,7 +8,5 @@ import familySvg from '@/assets/images/family/family.svg';
 </script>
 
 <template>
-    <ProgressiveImage :alt="l('family')" :sources="[
-        { src: familySvg, type: 'image/svg' },
-    ]"/>
+  <ProgressiveImage :alt="l('family')" :sources="[{ src: familySvg, type: 'image/svg' }]" />
 </template>

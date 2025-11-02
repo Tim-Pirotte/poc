@@ -1,7 +1,7 @@
 {
-    "name": "Name",
-    "invitePlaceholder": "e.g. John Smith",
-    "invite": "Invite",
-    "noFamilyPlan": "You cannot add family members since you don't have a family plan.",
-    "changePlan": "Change plan"
+  "name": "Name",
+  "invitePlaceholder": "e.g. John Smith",
+  "invite": "Invite",
+  "noFamilyPlan": "You cannot add family members since you don't have a family plan.",
+  "changePlan": "Change plan"
 }

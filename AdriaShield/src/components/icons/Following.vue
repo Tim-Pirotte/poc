@@ -8,7 +8,5 @@ import followingSvg from '@/assets/images/following/following.svg';
 </script>
 
 <template>
-    <ProgressiveImage :alt="l('following')" :sources="[
-        { src: followingSvg, type: 'image/svg' },
-    ]"/>
+  <ProgressiveImage :alt="l('following')" :sources="[{ src: followingSvg, type: 'image/svg' }]" />
 </template>

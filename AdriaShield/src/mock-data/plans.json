@@ -1,51 +1,53 @@
 [
-    {
-        "id": 1,
-        "name": "Premium",
-        "label": { "content": "Most popular", "color": "#FFC41E" },
+  {
+    "id": 1,
+    "name": "Premium",
+    "label": { "content": "Most popular", "color": "#FFC41E" },
+    "content": [
+      { "type": "heading", "content": "Everything in basic +" },
+      {
+        "type": "list",
         "content": [
-            { "type": "heading", "content": "Everything in basic +"},
-            { "type": "list", "content": [
-                { "type": "text", "content": "Route planning" },
-                { "type": "text", "content": "Add locations of friends" },
-                { "type": "text", "content": "Get alerted for orange and yellow emergencies" },
-                { "type": "text", "content": "No ads" }
-            ] }
-        ],
-        "price": "4.99",
-        "oldPrice": null
-    },
-    {
-        "id": 2,
-        "name": "Basic",
-        "label": null,
+          { "type": "text", "content": "Route planning" },
+          { "type": "text", "content": "Add locations of friends" },
+          { "type": "text", "content": "Get alerted for orange and yellow emergencies" },
+          { "type": "text", "content": "No ads" }
+        ]
+      }
+    ],
+    "price": "4.99",
+    "oldPrice": null
+  },
+  {
+    "id": 2,
+    "name": "Basic",
+    "label": null,
+    "content": [
+      {
+        "type": "list",
         "content": [
-            { "type": "list", "content": [
-                { "type": "text", "content": "View weather conditions" },
-                { "type": "text", "content": "See safety scores" }
-            ] }
-        ],
-        "price": null,
-        "oldPrice": null
-    },
-    {
-        "id": 3,
-        "name": "Family",
-        "label": { "content": "Best deal", "color": "#3CE783" },
-        "content": [
-            { "type": "text", "content": "Five Premium accounts for the price of four" }
-        ],
-        "price": "19.99",
-        "oldPrice": "24.99"
-    },
-    {
-        "id": 4,
-        "name": "Student",
-        "label": null,
-        "content": [
-            { "type": "text", "content": "A premium account at a 20% discount" }
-        ],
-        "price": "3.99",
-        "oldPrice": "4.99"
-    }
+          { "type": "text", "content": "View weather conditions" },
+          { "type": "text", "content": "See safety scores" }
+        ]
+      }
+    ],
+    "price": null,
+    "oldPrice": null
+  },
+  {
+    "id": 3,
+    "name": "Family",
+    "label": { "content": "Best deal", "color": "#3CE783" },
+    "content": [{ "type": "text", "content": "Five Premium accounts for the price of four" }],
+    "price": "19.99",
+    "oldPrice": "24.99"
+  },
+  {
+    "id": 4,
+    "name": "Student",
+    "label": null,
+    "content": [{ "type": "text", "content": "A premium account at a 20% discount" }],
+    "price": "3.99",
+    "oldPrice": "4.99"
+  }
 ]

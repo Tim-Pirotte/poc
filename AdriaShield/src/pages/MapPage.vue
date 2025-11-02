@@ -8,11 +8,10 @@ import FooterBar from '@/components/FooterBar.vue';
 </script>
 
 <template>
-  <HeaderBar/>
+  <HeaderBar />
   <h1>MapPage</h1>
-  <Advertisement/>
-  <FooterBar/>
+  <Advertisement />
+  <FooterBar />
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

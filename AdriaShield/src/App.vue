@@ -7,6 +7,6 @@ provide('setLanguage', setLanguage);
 </script>
 
 <template>
-<p v-if="locale.loading">Loading locale...</p>
-<router-view />
+  <p v-if="locale.loading">Loading locale...</p>
+  <router-view />
 </template>

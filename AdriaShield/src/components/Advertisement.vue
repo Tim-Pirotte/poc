@@ -9,13 +9,14 @@ import plan from '../mock-data/plan.json';
 </script>
 
 <template>
-    <aside v-if="plan.showAds" :aria-label="l('ariaAd')">
-        <router-link to="/plans">{{ l('removeAds') }}</router-link>
-        <a :href="advertisement.url" target="_blank" rel="noopener sponsored">
-            <ProgressiveImage :sources="advertisement.sources" :alt="advertisement.alt"/>
-        </a>
-    </aside>
+  <aside v-if="plan.showAds" :aria-label="l('ariaAd')">
+    <router-link to="/plans">
+      {{ l('removeAds') }}
+    </router-link>
+    <a :href="advertisement.url" target="_blank" rel="noopener sponsored">
+      <ProgressiveImage :sources="advertisement.sources" :alt="advertisement.alt" />
+    </a>
+  </aside>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

@@ -3,10 +3,10 @@ defineProps({
   sources: {
     type: Array,
     required: true,
-    validator: (arr) => arr.length >= 1
+    validator: (arr) => arr.length >= 1,
   },
   alt: { type: String, required: true },
-  loading: { type: String, default: "lazy" }
+  loading: { type: String, default: 'lazy' },
 });
 </script>
 
@@ -16,10 +16,6 @@ defineProps({
       <source :srcset="src.src" :type="src.type" />
     </template>
 
-    <img
-      :src="sources[sources.length - 1].src"
-      :alt="alt"
-      :loading="loading"
-    />
+    <img :src="sources[sources.length - 1].src" :alt="alt" :loading="loading" />
   </picture>
 </template>
